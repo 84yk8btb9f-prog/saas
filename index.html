@@ -9,6 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="saas-style.css">
+
+    <style>
+        .built-by {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.35);
+            margin-top: 6px;
+        }
+        .built-by a {
+            color: rgba(129, 140, 248, 0.8);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            border-bottom: 1px solid rgba(129, 140, 248, 0.25);
+            padding-bottom: 1px;
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+        .built-by a:hover {
+            color: rgba(129, 140, 248, 1);
+            border-color: rgba(129, 140, 248, 0.7);
+        }
+    </style>
 </head>
 <body>
     <div class="language-toggle">
@@ -143,59 +164,42 @@
             
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-tasks"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-tasks"></i></div>
                     <h3 data-en="Task Management" data-gr="Διαχείριση Εργασιών">Task Management</h3>
                     <p data-en="Create, assign, and track tasks with ease. Set priorities, deadlines, and dependencies." data-gr="Δημιουργήστε, αναθέστε και παρακολουθήστε εργασίες εύκολα.">
                         Create, assign, and track tasks with ease. Set priorities, deadlines, and dependencies.
                     </p>
                 </div>
-                
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
                     <h3 data-en="Team Collaboration" data-gr="Συνεργασία Ομάδας">Team Collaboration</h3>
                     <p data-en="Real-time chat, file sharing, and comments keep everyone on the same page." data-gr="Chat σε πραγματικό χρόνο, κοινή χρήση αρχείων και σχόλια.">
                         Real-time chat, file sharing, and comments keep everyone on the same page.
                     </p>
                 </div>
-                
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
                     <h3 data-en="Progress Tracking" data-gr="Παρακολούθηση Προόδου">Progress Tracking</h3>
                     <p data-en="Visualize project progress with Gantt charts, Kanban boards, and detailed analytics." data-gr="Οπτικοποιήστε την πρόοδο με διαγράμματα Gantt και αναλυτικά.">
                         Visualize project progress with Gantt charts, Kanban boards, and detailed analytics.
                     </p>
                 </div>
-                
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-calendar-alt"></i></div>
                     <h3 data-en="Smart Scheduling" data-gr="Έξυπνος Προγραμματισμός">Smart Scheduling</h3>
                     <p data-en="AI-powered scheduling automatically optimizes your team's workload and deadlines." data-gr="Προγραμματισμός με AI βελτιστοποιεί αυτόματα το φόρτο εργασίας.">
                         AI-powered scheduling automatically optimizes your team's workload and deadlines.
                     </p>
                 </div>
-                
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
                     <h3 data-en="Enterprise Security" data-gr="Ασφάλεια Επιχειρήσεων">Enterprise Security</h3>
                     <p data-en="Bank-level encryption, SSO, and advanced permissions keep your data secure." data-gr="Κρυπτογράφηση τραπεζικού επιπέδου και προηγμένα δικαιώματα.">
                         Bank-level encryption, SSO, and advanced permissions keep your data secure.
                     </p>
                 </div>
-                
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-plug"></i>
-                    </div>
+                    <div class="feature-icon"><i class="fas fa-plug"></i></div>
                     <h3 data-en="Integrations" data-gr="Ενσωματώσεις">Integrations</h3>
                     <p data-en="Connect with 100+ tools including Slack, GitHub, Google Drive, and more." data-gr="Συνδεθείτε με 100+ εργαλεία όπως Slack, GitHub, Google Drive.">
                         Connect with 100+ tools including Slack, GitHub, Google Drive, and more.
@@ -212,15 +216,10 @@
                     What our <span class="gradient-text">customers say</span>
                 </h2>
             </div>
-            
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                     <p data-en="FlowSpace transformed how our team works. We've cut project delivery time by 40% and collaboration has never been easier." data-gr="Το FlowSpace μετέτρεψε τον τρόπο που δουλεύει η ομάδα μας. Μειώσαμε τον χρόνο παράδοσης έργων κατά 40%.">
                         "FlowSpace transformed how our team works. We've cut project delivery time by 40% and collaboration has never been easier."
@@ -233,14 +232,9 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="testimonial-card">
                     <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                     <p data-en="The interface is incredibly intuitive. Our team was up and running in minutes without any training." data-gr="Η διεπαφή είναι απίστευτα διαισθητική. Η ομάδα μας ξεκίνησε σε λίγα λεπτά χωρίς εκπαίδευση.">
                         "The interface is incredibly intuitive. Our team was up and running in minutes without any training."
@@ -253,14 +247,9 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="testimonial-card">
                     <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
                     <p data-en="Best project management tool we've used. The analytics and reporting features are game-changing." data-gr="Το καλύτερο εργαλείο διαχείρισης έργων που χρησιμοποιήσαμε. Τα αναλυτικά είναι επαναστατικά.">
                         "Best project management tool we've used. The analytics and reporting features are game-changing."
@@ -287,7 +276,6 @@
                     Choose the plan that fits your team. All plans include 14-day free trial.
                 </p>
             </div>
-            
             <div class="pricing-cards-preview">
                 <div class="pricing-card">
                     <div class="pricing-header">
@@ -306,7 +294,6 @@
                     </ul>
                     <a href="saas-pricing.html" class="btn btn-outline" data-en="Start Free Trial" data-gr="Ξεκινήστε Δωρεάν">Start Free Trial</a>
                 </div>
-                
                 <div class="pricing-card featured">
                     <div class="pricing-badge" data-en="Most Popular" data-gr="Πιο Δημοφιλές">Most Popular</div>
                     <div class="pricing-header">
@@ -326,7 +313,6 @@
                     </ul>
                     <a href="saas-pricing.html" class="btn btn-primary" data-en="Start Free Trial" data-gr="Ξεκινήστε Δωρεάν">Start Free Trial</a>
                 </div>
-                
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h3 data-en="Enterprise" data-gr="Επιχειρηματικό">Enterprise</h3>
@@ -373,9 +359,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <div class="logo-icon">
-                            <i class="fas fa-layer-group"></i>
-                        </div>
+                        <div class="logo-icon"><i class="fas fa-layer-group"></i></div>
                         <span>FlowSpace</span>
                     </div>
                     <p data-en="Modern project management for modern teams. Streamline workflows and deliver faster." data-gr="Σύγχρονη διαχείριση έργων για σύγχρονες ομάδες.">
@@ -423,6 +407,7 @@
                     <span class="badge">GDPR Compliant</span>
                     <span class="badge">ISO 27001</span>
                 </div>
+                <p class="built-by">Built by <a href="https://nikolassapa.vercel.app" target="_blank" rel="noopener noreferrer">Nikolas Sapalidis</a></p>
             </div>
         </div>
     </footer>
