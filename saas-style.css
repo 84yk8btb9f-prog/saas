@@ -395,7 +395,7 @@ input, textarea, select {
 .dashboard-preview {
     position: relative;
     border-radius: var(--radius-lg);
-    overflow: hidden;
+    overflow: visible;
     box-shadow: var(--shadow-xl);
     background: var(--bg-light);
 }
@@ -404,6 +404,7 @@ input, textarea, select {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: var(--radius-lg);
 }
 
 .dashboard-overlay {
