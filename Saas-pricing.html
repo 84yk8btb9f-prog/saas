@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - FlowSpace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="saas-style.css">
+    <style>
+        .pricing-toggle {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 50px;
+            background: var(--bg-lighter);
+            padding: 6px;
+            border-radius: 30px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .pricing-toggle button {
+            padding: 10px 24px;
+            border-radius: 24px;
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text-light);
+        }
+        .pricing-toggle button.active {
+            background: var(--primary);
+            color: var(--bg-white);
+        }
+        .pricing-full-section {
+            padding: 60px 24px 100px;
+        }
+        .save-badge {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="gr">ΕΛ</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon"><i class="fas fa-layer-group"></i></div>
+                <span>FlowSpace</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="saas-index.html" data-en="Home" data-gr="Αρχική">Home</a></li>
+                <li><a href="saas-features.html" data-en="Features" data-gr="Χαρακτηριστικά">Features</a></li>
+                <li><a href="saas-pricing.html" class="active" data-en="Pricing" data-gr="Τιμολόγηση">Pricing</a></li>
+                <li><a href="saas-about.html" data-en="About" data-gr="Σχετικά">About</a></li>
+                <li><a href="saas-contact.html" data-en="Contact" data-gr="Επικοινωνία">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-link" data-en="Sign In" data-gr="Σύνδεση">Sign In</a>
+                <a href="#" class="btn btn-primary" data-en="Start Free Trial" data-gr="Δοκιμή Δωρεάν">Start Free Trial</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pricing-full-section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title" data-en="Simple, transparent pricing" data-gr="Απλή, διαφανής τιμολόγηση">
+                    Simple, transparent <span class="gradient-text">pricing</span>
+                </h1>
+                <p data-en="Choose the plan that fits your team. All plans include 14-day free trial." data-gr="Επιλέξτε το πλάνο που ταιριάζει στην ομάδα σας.">
+                    Choose the plan that fits your team. All plans include 14-day free trial.
+                </p>
+            </div>
+
+            <div class="pricing-toggle">
+                <button class="toggle-monthly active" data-en="Monthly" data-gr="Μηνιαία">Monthly</button>
+                <button class="toggle-yearly" data-en="Yearly" data-gr="Ετήσια">Yearly <span class="save-badge">Save 20%</span></button>
+            </div>
+            
+            <div class="pricing-cards-preview">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-en="Starter" data-gr="Εκκίνησης">Starter</h3>
+                        <div class="pricing-price">
+                            <span class="currency">€</span>
+                            <span class="amount monthly-price">9</span>
+                            <span class="amount yearly-price" style="display:none;">7</span>
+                            <span class="period" data-en="/user/month" data-gr="/χρήστη/μήνα">/user/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <span data-en="Up to 10 team members" data-gr="Έως 10 μέλη ομάδας">Up to 10 team members</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Unlimited projects" data-gr="Απεριόριστα έργα">Unlimited projects</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="10GB storage" data-gr="10GB αποθήκευση">10GB storage</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Basic integrations" data-gr="Βασικές ενσωματώσεις">Basic integrations</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Email support" data-gr="Υποστήριξη email">Email support</span></li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" data-en="Start Free Trial" data-gr="Ξεκινήστε Δωρεάν">Start Free Trial</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge" data-en="Most Popular" data-gr="Πιο Δημοφιλές">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 data-en="Professional" data-gr="Επαγγελματικό">Professional</h3>
+                        <div class="pricing-price">
+                            <span class="currency">€</span>
+                            <span class="amount monthly-price">19</span>
+                            <span class="amount yearly-price" style="display:none;">15</span>
+                            <span class="period" data-en="/user/month" data-gr="/χρήστη/μήνα">/user/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <span data-en="Unlimited team members" data-gr="Απεριόριστα μέλη">Unlimited team members</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Unlimited projects" data-gr="Απεριόριστα έργα">Unlimited projects</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="100GB storage" data-gr="100GB αποθήκευση">100GB storage</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Advanced integrations" data-gr="Προηγμένες ενσωματώσεις">Advanced integrations</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Priority support" data-gr="Προτεραιότητα υποστήριξης">Priority support</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Advanced analytics" data-gr="Προηγμένα αναλυτικά">Advanced analytics</span></li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" data-en="Start Free Trial" data-gr="Ξεκινήστε Δωρεάν">Start Free Trial</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-en="Enterprise" data-gr="Επιχειρηματικό">Enterprise</h3>
+                        <div class="pricing-price">
+                            <span class="amount" data-en="Custom" data-gr="Προσαρμοσμένο">Custom</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <span data-en="Everything in Pro" data-gr="Όλα από Pro">Everything in Pro</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Unlimited storage" data-gr="Απεριόριστη αποθήκευση">Unlimited storage</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="SSO & advanced security" data-gr="SSO & προηγμένη ασφάλεια">SSO & advanced security</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Dedicated support" data-gr="Αφοσιωμένη υποστήριξη">Dedicated support</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="Custom integrations" data-gr="Προσαρμοσμένες ενσωματώσεις">Custom integrations</span></li>
+                        <li><i class="fas fa-check"></i> <span data-en="SLA guarantee" data-gr="Εγγύηση SLA">SLA guarantee</span></li>
+                    </ul>
+                    <a href="saas-contact.html" class="btn btn-outline" data-en="Contact Sales" data-gr="Επικοινωνία Πωλήσεων">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><i class="fas fa-layer-group"></i></div>
+                        <span>FlowSpace</span>
+                    </div>
+                    <p data-en="Modern project management for modern teams." data-gr="Σύγχρονη διαχείριση έργων για σύγχρονες ομάδες.">
+                        Modern project management for modern teams.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Product" data-gr="Προϊόν">Product</h3>
+                    <ul>
+                        <li><a href="saas-features.html" data-en="Features" data-gr="Χαρακτηριστικά">Features</a></li>
+                        <li><a href="saas-pricing.html" data-en="Pricing" data-gr="Τιμολόγηση">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Company" data-gr="Εταιρεία">Company</h3>
+                    <ul>
+                        <li><a href="saas-about.html" data-en="About" data-gr="Σχετικά">About</a></li>
+                        <li><a href="saas-contact.html" data-en="Contact" data-gr="Επικοινωνία">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-en="Resources" data-gr="Πόροι">Resources</h3>
+                    <ul>
+                        <li><a href="#" data-en="Help Center" data-gr="Κέντρο Βοήθειας">Help Center</a></li>
+                        <li><a href="#" data-en="Documentation" data-gr="Τεκμηρίωση">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FlowSpace. <span data-en="All rights reserved." data-gr="Όλα τα δικαιώματα διατηρούνται.">All rights reserved.</span></p>
+                <div class="footer-badges">
+                    <span class="badge">SOC 2 Certified</span>
+                    <span class="badge">GDPR Compliant</span>
+                    <span class="badge">ISO 27001</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="saas-script.js"></script>
+</body>
+</html>
