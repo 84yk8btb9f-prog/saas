@@ -152,8 +152,8 @@ input, textarea, select {
 /* ==================== LANGUAGE TOGGLE ==================== */
 .language-toggle {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    bottom: 24px;
+    right: 24px;
     z-index: 10000;
     display: flex;
     gap: 4px;
@@ -1029,7 +1029,7 @@ input, textarea, select {
     }
     
     .language-toggle {
-        top: 10px;
-        right: 10px;
+        bottom: 16px;
+        right: 16px;
     }
 }
